@@ -34,33 +34,48 @@ body{
   font-size: 12px;
   line-height: 15px;
 }
+@media (max-width: 700px) { 
+  body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  }
+}
+
 header{
   display: flex;
   flex-direction: row;
-justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding: 1rem;
 
 }
-.round{
+@media (max-width: 700px) { 
+header{
+  /* margin-bottom: 20%; */
+  }
+}
+.logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5% 0;
+}
+/* .round{
   position: fixed;
   top: 15px;
   left: 140px;
   width: 40px;
   height: 40px;
-}
-@media (max-width: 700px) { 
-  :header{
-  
-  }
-}
-
-
+} */
 
 .header-menu{
   display: flex;
   flex-direction: row;
-  max-width: 75%;
+  width: 75%;
 }
 .nav-bar{
   display: flex;
@@ -75,6 +90,7 @@ justify-content: space-around;
   margin: 1.5rem;
 
 }
+
 li{
   list-style-type: none;
   display: inline;
@@ -82,6 +98,88 @@ li{
 .header-buttons{
   display: flex;
   align-items: center;
+}
+
+.button-1{
+  display: inline-block;
+  position: relative;
+margin: 0px 1rem 0px 1rem;
+width: 87px;
+height: 34px;
+background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+color: #BC9CFF;
+border: none;
+border-radius: 22px;
+z-index: 1;
+
+
+}
+.button-1::before{
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: 'войти';
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem;
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  border-radius: 22px;
+  z-index: 0;
+}
+  /* display: block;
+  background: white;
+  border-radius:22px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  color: #BC9CFF;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  position: relative;
+  z-index: 2;
+  $border: 5px; */
+
+
+
+  /* display: block;
+  content: '';
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius:22px;
+  width: 87px;
+  height: 34px;
+  border: none;
+  text-align: center;
+  position: relative;
+  bottom: -5px;
+  z-index: 1;
+  margin: -$border;
+} */
+
+.button-2{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius:22px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  position: relative;
+
+}
+
+.register-button{
+  height: 34px;
+  width: 196px;
+  font-size: 12px;
+  padding: 0.6rem ;
 }
 h1{
   font-size: 26px;
@@ -92,7 +190,7 @@ h1{
 
 
 .application-form{
-  position: absolute;
+  position: relative;
   margin: 140px 0px 0px 140px;
   width: 380px;
   height: 376px;
@@ -110,11 +208,10 @@ h1{
 }
 @media (max-width: 700px){
   .application-form{
-    /* justify-self: center; */
-    /* align-self: center; */
-    margin: unset;
-    margin: 20% 30% 20% 30%;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10%; */
+    }
 }
 .dates{
   display: flex;
@@ -274,18 +371,9 @@ font-size: 12px;
   color: #BC9CFF;
 }
 
-#submit{
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius:22px;
-  border: none;
+.submit-button{
   width: 320px;
   height: 44px;
-  text-align: center;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  position: relative;
   bottom: -5px;
 
 }
