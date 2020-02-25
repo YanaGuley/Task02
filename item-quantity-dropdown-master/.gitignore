@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+.tm_properties
+npm-debug.log
