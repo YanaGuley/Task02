@@ -27,14 +27,10 @@
 
 body{
  
-  line-height: 2rem;  
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-    /* min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto; */
+  font-size: 14px;
+  line-height: 24px;
 }
 @media (max-width: 700px) { 
   body{
@@ -47,7 +43,6 @@ body{
 
 header{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: white;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -66,37 +61,24 @@ header{
   justify-content: center;
   margin: 0 5vw 0 0;
 }
-
-
 .header-menu{
   display: flex;
-  flex-direction: row;
-}
-.nav-bar{
-  display: flex;
-  align-items: center;
 }
 ul{
   padding: 0;
-}
-a{
-  text-decoration: none;
-  color: rgba(31, 32, 65, 0.5);
-  font-size: 14px;
-  line-height: 17px;
-
-}
-.nav-link{
-  margin: 1.5rem;
-
-}
-li{
   list-style-type: none;
 
 }
+
+.link{
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 17px;
+  margin: 1.5rem;
+}
+
 .nav-bar li{
   display: inline;  
-  text-decoration: none;
 
 }
 .header-buttons{
@@ -157,17 +139,10 @@ li{
   font-size: 12px;
   padding: 0.6rem ;
 }
-h1{
-  font-size: 26px;
-  line-height: 30px;
-  font-family: 'Montserrat';
-}
-
 
 .main{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   background-image: url(image-3.png);
   background-size: cover;
   padding: 4rem 6rem 1rem;
@@ -177,13 +152,10 @@ h1{
   position: relative;
   margin-bottom:370px;
   width: 380px;
-  height: 376px;
-  /* left: 140px;
-  top: 140px; */
+  height: 393px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  /* width: min-content; */
   border-radius: 5px;
   background-color: white;
   padding: 1rem;
@@ -194,16 +166,20 @@ h1{
   .application-form{
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 10%; */
     }
+}
+h1{
+  font-size: 26px;
+  line-height: 30px;
+  font-family: 'Montserrat';
 }
 .dates{
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
   justify-content: space-between;
-  /* font-size: 12px;
-  line-height: 15px; */
+  font-size: 12px;
+  line-height: 15px;
 }
 .dates-first, .dates-second{
   display: flex; 
@@ -217,15 +193,11 @@ h1{
   padding: 5px 32px 8.44px 15px;
   margin: 5.4px 0 20.56px 0;
   font-family: "Montserrat";
-  font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
 }
 #first-date, #second-date{
-  /* position: absolute; */
   width: 150px;
   height: 44px;
-  /* left: 185px;
-  top: 282.44px; */
 }
 .datepicker{
 font-family: 'Montserrat';
@@ -242,10 +214,7 @@ font-size: 12px;
   color: #FFFFFF;
   font-weight: bold;
 }
-.datepicker--cell.-focus- {
-  /* border-radius: 22px; */
 
-}
 .datepicker--cell.-selected- {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   font-weight: bold;
@@ -280,7 +249,6 @@ font-size: 12px;
   font-size: 14px;
   font-family: 'Montserrat';
   text-transform: none;
-  /* font-weight: bold; */
   padding: 13px 193px 13px 0;
 }
 .iqdropdown{
@@ -362,15 +330,10 @@ font-size: 12px;
 
 }
 .note{
-  /* justify-self: flex-end; */
   position: relative;
-  /* top: 10px; */
-  /* left: 10px; */
   text-align: end;
   width: 100%;
   height: 2rem;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 
 
@@ -392,7 +355,7 @@ footer{
 }
 @media(max-width: 1200px){
   .footer{
-    grid-template-columns: 19rem repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: 19rem repeat(auto-fit, minmax(12rem, 1fr));
   }
 }
 .section-1{
@@ -405,22 +368,21 @@ footer{
   width: 8rem;
 }
 .section-4{
-  width: 10rem;
+  width: 11rem;
 }
 .section-5{
   width: 16.2rem;
 }
 footer p{
-  font-size: 14px;
-  line-height: 24px;
-  /* padding: 0 2rem 0 0; */
   color: rgba(31, 32, 65, 0.75);
 }
 .footer h4{
 text-transform: uppercase;
 font-weight: bold;
+font-size: 14px;
 }
-.footer-nav-link{
+.footer-link{
+  margin: 0;
   line-height: 2rem;
 }
 .subscribe{
@@ -431,8 +393,6 @@ font-weight: bold;
   height: 44px;
   padding: 1rem;
   font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 24px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
 }
