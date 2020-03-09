@@ -1,0 +1,93 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application-form</title>
+
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+
+    <link href="air-datepicker-master/air-datepicker-master/dist/css/datepicker.css" rel="stylesheet">
+    <script src="air-datepicker-master/air-datepicker-master/dist/js/datepicker.js"></script>
+
+    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+    <link rel="stylesheet" href="item-quantity-dropdown-master/lib/item-quantity-dropdown.min.css">
+
+
+    <link rel="stylesheet" href="common.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="application-form.css" type="text/css">
+    <link rel="stylesheet" href="datepicker.css" type="text/css">
+    <link rel="stylesheet" href="guests-dropdown.css" type="text/css">
+
+</head>
+<div class="main">
+    <!-- <img src="image-3.png" alt="" width="100%" height="100%"> -->
+    <div class="application-form">
+        <h1>Найдём номера под ваши пожелания</h1>
+        <form action="#" method="get">
+            <div class="dates">
+                <div class="dates-first">
+                    <label for="first-date">прибытие</label>
+                    <input type="date" id="first-date" class="datepicker-here form-control" data-language="en"
+                        placeholder="ДД.ММ.ГГГГ">
+                    <!-- <i class="sb-date-field__chevron bicon-downchevron" aria-hidden="true" style="cursor: pointer;"> ::before</i> -->
+                </div>
+                <script>  </script>
+                <div class="dates-second">
+
+                    <label for="second-date">выезд</label>
+                    <input type="text" id="second-date" class="datepicker-here form-control" data-language="en"
+                        placeholder="ДД.ММ.ГГГГ">
+                </div>
+            </div>
+
+            <label for="guests" class="guests"> гости</label>
+
+            <div class="guests" id="guests">
+                <div class="iqdropdown">
+                    <p class="iqdropdown-selection"></p>
+                    <div class="iqdropdown-menu">
+                        <div class="iqdropdown-menu-option" data-id="adults">
+                            <div>
+                                <p class="iqdropdown-item">взрослые</p>
+                                <!-- <p class="iqdropdown-description">A short description</p> -->
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="children">
+                            <div>
+                                <p class="iqdropdown-item">дети</p>
+                            </div>
+                        </div>
+                        <div class="iqdropdown-menu-option" data-id="newborns">
+                            <div>
+                                <p class="iqdropdown-item">младенцы</p>
+                            </div>
+                        </div>
+                        <div class="guests-filter-footer">
+                            <button type="button" id="clear-guests-button">очистить</button>
+                            <button type="button" id="apply-guests-button">применить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input class="button-2 submit-button" id="submit" type="submit" value="подобрать номер">
+        </form>
+    </div>
+    <p class="note">Лучшие номера для вашей работы, <br> отдыха и просто вдохновения</p>
+
+</div>
+<script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.iqdropdown').iqDropdown({
+            // text to show on the dropdown
+            selectionText: 'гость',
+            // text to show for multiple items
+            textPlural: 'гостя',
+            textPluralDeclination: ['гость', 'гостя', 'гостей'],
+        });
+    });
+</script>

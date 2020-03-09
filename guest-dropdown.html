@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest-dropdown</title>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+    <link rel="stylesheet" href="item-quantity-dropdown-master/lib/item-quantity-dropdown.min.css">
+    <link rel="stylesheet" href="common.css" type="text/css">
+    <link rel="stylesheet" href="guests-dropdown.css" type="text/css">
+
+</head>
+
+<body>
+
+
+    <label for="guests" class="card__label"> гости</label>
+
+    <div class="guests" id="guests">
+        <div class="iqdropdown">
+            <p class="iqdropdown-selection"></p>
+            <div class="iqdropdown-menu">
+                <div class="iqdropdown-menu-option" data-id="adults">
+                    <div>
+                        <p class="iqdropdown-item">взрослые</p>
+                        <!-- <p class="iqdropdown-description">A short description</p> -->
+                    </div>
+                </div>
+                <div class="iqdropdown-menu-option" data-id="children">
+                    <div>
+                        <p class="iqdropdown-item">дети</p>
+                    </div>
+                </div>
+                <div class="iqdropdown-menu-option" data-id="newborns">
+                    <div>
+                        <p class="iqdropdown-item">младенцы</p>
+                    </div>
+                </div>
+                <div class="guests-filter-footer">
+                    <button type="button" id="clear-guests-button">очистить</button>
+                    <button type="button" id="apply-guests-button">применить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.iqdropdown').iqDropdown({
+                // text to show on the dropdown
+                selectionText: 'гость',
+                // text to show for multiple items
+                textPlural: 'гостя',
+                textPluralDeclination: ['гость', 'гостя', 'гостей'],
+            });
+        });
+    </script>
+</body>
+
+</html>

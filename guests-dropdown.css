@@ -1,0 +1,99 @@
+
+  .iqdropdown-item{
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #1F2041;
+  
+  }
+  .iqdropdown .iqdropdown-menu{
+    position: absolute;
+    top: 42px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 0 0 5px;
+    font-weight: bold;
+  }
+  
+  .iqdropdown.menu-open{
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  
+  }
+  .iqdropdown .iqdropdown-selection{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    text-transform: none;
+    padding: 13px 193px 13px 0;
+  }
+  .iqdropdown{
+    width: 320px;
+    height: 44px;
+    margin: 5.4px 0 20.56px 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+  }
+  
+  .iqdropdown .icon-decrement::after{
+    background: transparent;
+    content: none;
+  }
+  .iqdropdown .icon-decrement::before{
+    content: '-';
+    font-style: normal;
+  }
+  .iqdropdown .icon-decrement.icon-increment::before{
+    background: transparent;
+    content:none;
+  }
+  .iqdropdown .icon-decrement.icon-increment::after{
+    top: 0;
+    content: '+';
+    font-style: normal;
+  }
+  .iqdropdown .iqdropdown-item-controls{
+    height: 30px;
+  }
+  .iqdropdown .iqdropdown-item-controls button.button-decrement, .iqdropdown .iqdropdown-item-controls button.button-increment{
+    border-radius: 50%;
+    line-height: 14px;
+    font-size: 14px;
+  }
+  
+  .iqdropdown .iqdropdown-item-controls button{
+    height: 30px;
+    width: 30px;
+    padding: 0;
+  }
+  .iqdropdown .iqdropdown-item-controls .counter{
+    border: transparent;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 11px 12px;
+    line-height: 10px;
+    width: 30px;
+  
+  
+  }
+  .iqdropdown .iqdropdown-menu-option{
+    height: 37px;
+  }
+  .guests-filter-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7px 13px 14px;
+  } 
+  #clear-guests-button, #apply-guests-button{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Montserrat";
+  
+  }
+  
+  #clear-guests-button{
+    color: rgba(31, 32, 65, 0.5);
+  }
+  #apply-guests-button{
+    color: #BC9CFF;
+  }
+  

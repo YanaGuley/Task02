@@ -1,0 +1,68 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    padding: 0.5rem 6rem 0.5rem ;
+    /* z-index: 0; */
+  
+  }
+  @media (max-width: 700px) { 
+  header{
+    /* margin-bottom: 20%; */
+    }
+  }
+  .logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5vw 0 0;
+  }
+  .header-menu{
+    display: flex;
+    /* z-index: 0; */
+  }
+  .nav-bar li{
+    display: inline;  
+    line-height: 30px;
+  
+  }
+  .header-buttons{
+    display: flex;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .menu_drop {
+    position: absolute;
+    left: -999rem;
+    opacity: 0;
+    margin-bottom: -20rem;
+    margin-right: -20rem;
+    background-color: white;
+    
+  }
+  
+  @media (max-width: 700px) { 
+    .menu_drop{
+    }}
+    
+  .menu_column{
+    flex-direction: column;
+  }
+  
+  .menu__item_drop-inside .link:focus + .menu_drop,
+  .menu__item_drop-inside:hover .menu_drop,
+  .menu_drop:focus-within {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }

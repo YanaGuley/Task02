@@ -1,0 +1,84 @@
+
+.button_border-gradient_size-s{
+  --width: 87px;
+  --height: 34px;
+}
+.button_border-gradient_size-m{
+  --width: 99px;
+  --height: 44px;
+
+}
+
+.button_border-gradient{
+  display: block;
+  content: '';
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  width: calc(var(--width) - 5px);
+  height: calc(var(--height) - 5px);
+  background-color: white;
+  color: #BC9CFF;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.button_border-gradient::before{
+  display: block;
+  position: absolute;
+  top: -2.5px;
+  left: -2.5px;
+  width: var(--width);
+  height: var(--height);
+  content: '';
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+  border-radius: 22px;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.button-2{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius:22px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  position: relative;
+  cursor: pointer;
+}
+.log-in-button{
+  margin: 0 1rem 0;
+}
+.register-button{
+  height: 34px;
+  width: 196px;
+  font-size: 12px;
+  padding: 0.6rem ;
+}
+.submit-button{
+  width: 320px;
+  height: 44px;  
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.arrow-forward{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 283px;
+  background-color: transparent;
+  border: none;
+}
+

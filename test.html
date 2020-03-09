@@ -4,16 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page</title>
 
-
-    <link href="air-datepicker-master/air-datepicker-master/dist/css/datepicker.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+    <link href="air-datepicker-master/air-datepicker-master/dist/css/datepicker.css" rel="stylesheet">
     <script src="air-datepicker-master/air-datepicker-master/dist/js/datepicker.js"></script>
+
+    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
     <link rel="stylesheet" href="item-quantity-dropdown-master/lib/item-quantity-dropdown.min.css">
-    <link rel="stylesheet" href="task02.css" type="text/css">
+
+
+    <link rel="stylesheet" href="common.css" type="text/css">
+    <link rel="stylesheet" href="header.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="card.css" type="text/css">
+    <link rel="stylesheet" href="application-form.css" type="text/css">
+    <link rel="stylesheet" href="datepicker.css" type="text/css">
+    <link rel="stylesheet" href="guests-dropdown.css" type="text/css">
+    <link rel="stylesheet" href="footer.css" type="text/css">
+    <link rel="stylesheet" href="button.css" type="text/css">
+
 
 </head>
 
@@ -25,44 +38,69 @@
 
         <div class="header-menu">
             <nav class="nav-bar">
-                <ul>
-                    <li><a class="link" href="/about-us">О нас</a></li>
-                    <li><a class="link" href="/products">Услуги</a></li>
-                    <li><a class="link" href="/careers">Вакансии</a></li>
-                    <li><a class="link" href="/news">Новости</a></li>
-                    <li><a class="link" href="/documentation">Соглашения</a></li>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="link" href="/about-us">О нас</a>
+                    </li>
 
+                    <li class="menu__item menu__item_drop-inside">
+                        <a class="link" href="/products">Услуги</a>
+
+                        <ul class="menu menu_column menu_drop">
+                            <li class="menu__item">
+                                <a class="link" href="/product_1">Услуга 1Услуга 1Услуга 1Услуга 1</a></li>
+                            <li class="menu__item">
+                                <a class="link" href="/product_2">Услуга 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link" href="/careers">Вакансии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link" href="/news">Новости</a>
+                    </li>
+                    <li class="menu__item menu__item_drop-inside">
+                        <a class="link" href="/documentation">Соглашения</a>
+                        <ul class="menu menu_column menu_drop">
+                            <li class="menu__item">
+                                <a class="link" href="/doc_1">Документ 1Документ 1Документ 1</a></li>
+                            <li class="menu__item">
+                                <a class="link" href="/doc_2">Документ 2</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
+
             <div class="header-buttons">
-                <button class="button_border-gradient log-in-button" type="button">Войти</button>
+                <button class="button_border-gradient_size-s button_border-gradient log-in-button"
+                    type="button">Войти</button>
                 <button class="button-2 register-button" type="button">Зарегистрироваться</button>
 
             </div>
         </div>
     </header>
     <div class="main">
-        <div class="application-form">
+
+        <div class="card application-form">
             <h1>Найдём номера под ваши пожелания</h1>
             <form action="#" method="get">
                 <div class="dates">
                     <div class="dates-first">
-                        <label for="first-date">прибытие</label>
+                        <label for="first-date" class="card__label">прибытие</label>
                         <input type="date" id="first-date" class="datepicker-here form-control" data-language="en"
                             placeholder="ДД.ММ.ГГГГ">
-                        <!-- <i class="sb-date-field__chevron bicon-downchevron" aria-hidden="true" style="cursor: pointer;">
-            ::before
-        </i> -->
+
                     </div>
                     <script>  </script>
                     <div class="dates-second">
 
-                        <label for="second-date">выезд</label>
+                        <label for="second-date" class="card__label">выезд</label>
                         <input type="text" id="second-date" class="datepicker-here form-control" data-language="en"
                             placeholder="ДД.ММ.ГГГГ">
                     </div>
                 </div>
-                <label for="guests" class="guests"> гости</label>
+
+                <label for="guests" class="card__label"> гости</label>
 
                 <div class="guests" id="guests">
                     <div class="iqdropdown">
@@ -71,7 +109,6 @@
                             <div class="iqdropdown-menu-option" data-id="adults">
                                 <div>
                                     <p class="iqdropdown-item">взрослые</p>
-                                    <!-- <p class="iqdropdown-description">A short description</p> -->
                                 </div>
                             </div>
                             <div class="iqdropdown-menu-option" data-id="children">
@@ -91,12 +128,14 @@
                         </div>
                     </div>
                 </div>
-                <input class="button-2 submit-button" id="submit" type="submit" value="подобрать номер">
+                <button class="button-2 submit-button">подобрать номер<img class="arrow-forward"
+                        src="arrow_forward_white.svg" alt=""></button>
             </form>
         </div>
         <p class="note">Лучшие номера для вашей работы, <br> отдыха и просто вдохновения</p>
 
     </div>
+
     <footer>
         <div class="footer">
             <section class="section-1">
@@ -139,7 +178,7 @@
                 <div class="subscribe">
                     <label for="subscribe"></label>
                     <input type="email" name="email" id="subscribe" placeholder="Email">
-                    <button class="email-arrow" type="submit"><img src="arrow_forward.svg" alt=""></button>
+                    <button class="email-arrow" type="submit"><img src="arrow_forward_purple.svg" alt=""></button>
                 </div>
             </section>
         </div>
@@ -169,8 +208,6 @@
             });
         });
     </script>
-
-
 </body>
 
 </html>

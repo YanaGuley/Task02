@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+
+    <link rel="stylesheet" href="common.css" type="text/css">
+    <link rel="stylesheet" href="card.css" type="text/css">
+    <link rel="stylesheet" href="registration-form.css" type="text/css">
+</head>
+
+<body>
+    <div class="card registration-form">
+        <h1>Регистрация аккаунта</h1>
+        <form>
+            <fieldset class="form__fieldset">
+                <label>
+                    <input class="input-text" type="text" name="name" required="required" placeholder="Имя">
+                </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <label>
+                    <input class="input-text" type="text" name="surname" id="surname" required="required"
+                        placeholder="Фамилия">
+                </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <label>
+                    <input class="radio" type="radio" name="sex" value="male" checked="checked"> Мужчина
+                    <input type="radio" name="sex" value="female"> Женщина
+                </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <label class="card__label">
+                    <legend class="registration-form__legend">Дата рождения</legend>
+
+                    <input class="input-text" type="date" name="dob" id="date_of_birth" required="required"
+                        placeholder="ДД.ММ.ГГГГ">
+                </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <label class="card__label">
+                    <legend class="registration-form__legend">Данные для входа в сервис</legend>
+                    <input class="input-text" type="email" name="email" id="email" required="required"
+                        placeholder="Email">
+                    <input class="input-text" type="password" name="password" id="password" required="required"
+                        placeholder="Пароль">
+                </label>
+            </fieldset>
+            <div class="inline-block">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Получать спецпредложения</p>
+            </div>
+            <button class="button-2 submit-button">Перейти к оплате <img class="arrow-forward"
+                    src="arrow_forward_white.svg" alt=""> </button>
+            <div class="inline-block log-in-section">
+                <p>Уже есть аккаунт на Toxin</p>
+                <button class="button_border-gradient button_border-gradient_size-m"></button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
