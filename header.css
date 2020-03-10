@@ -59,6 +59,21 @@ header{
     background-color: white;
     
   }
+  .menu__item_drop-inside:after{
+    position: absolute;
+    content: url(expand_more.svg);    
+    cursor: pointer;
+
+   
+  }
+  .menu__item_drop-inside_products:after{
+     top: 42px;
+    left: 688px;
+  }
+  .menu__item_drop-inside_docs:after{
+    top: 42px;
+    left: 1050px;
+  }
   
   @media (max-width: 700px) { 
     .menu_drop{
