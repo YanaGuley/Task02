@@ -35,7 +35,7 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    border: 1px solid rgba(31, 32, 65, 0.25);ray;
+    border: 1px solid rgba(31, 32, 65, 0.25);
     vertical-align: -5px;
     outline: none;
   }
@@ -108,9 +108,9 @@
     border: 1px solid #BC9CFF;
   }
   
-  input:focus + .slider {
-    /* box-shadow: 0 0 1px #2196F3; */
-  }
+  /* input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  } */
   
   input:checked + .slider:before {
     -webkit-transform: translateX(20px);

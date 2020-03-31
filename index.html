@@ -10,22 +10,14 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
-    <link href="air-datepicker-master/air-datepicker-master/dist/css/datepicker.css" rel="stylesheet">
-    <script src="air-datepicker-master/air-datepicker-master/dist/js/datepicker.js"></script>
+    <link href="forms/air-datepicker-master/air-datepicker-master/dist/css/datepicker.css" rel="stylesheet">
+    <script src="forms/air-datepicker-master/air-datepicker-master/dist/js/datepicker.js"></script>
 
-    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
-    <link rel="stylesheet" href="item-quantity-dropdown-master/lib/item-quantity-dropdown.min.css">
+    <script src="forms/item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+    <link rel="stylesheet" href="forms/item-quantity-dropdown-master/lib/item-quantity-dropdown.min.css">
 
 
-    <link rel="stylesheet" href="common.css" type="text/css">
-    <link rel="stylesheet" href="header.css" type="text/css">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="stylesheet" href="card.css" type="text/css">
-    <link rel="stylesheet" href="application-form.css" type="text/css">
-    <link rel="stylesheet" href="datepicker.css" type="text/css">
-    <link rel="stylesheet" href="guests-dropdown.css" type="text/css">
-    <link rel="stylesheet" href="footer.css" type="text/css">
-    <link rel="stylesheet" href="button.css" type="text/css">
+    <link rel="stylesheet" href="styles/master.css" type="text/css">
 
 
 </head>
@@ -33,7 +25,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.svg" alt="logo">
+            <img src="icons/logo.svg" alt="logo">
         </div>
 
         <div class="header-menu">
@@ -44,38 +36,39 @@
                     </li>
 
                     <li class="menu__item menu__item_drop-inside">
-                        <a class="link" href="/products">Услуги</a>
+                        <a class="link header-link" href="/products">Услуги <img src="icons/expand_more.svg" alt=""></a>
 
                         <ul class="menu menu_column menu_drop-products menu_drop">
                             <li class="menu__item">
-                                <a class="link" href="/product_1">Услуга 1Услуга 1Услуга 1Услуга 1</a></li>
+                                <a class="link header-link" href="/product_1">Услуга 1Услуга 1Услуга 1Услуга 1</a></li>
                             <li class="menu__item">
-                                <a class="link" href="/product_2">Услуга 2</a></li>
-                            <li class="menu__item">
-
-                                <a class="link" href="/product_2">Услуга 2</a></li>
+                                <a class="link header-link" href="/product_2">Услуга 2</a></li>
                             <li class="menu__item">
 
-                                <a class="link" href="/product_2">Услуга 2</a></li>
+                                <a class="link header-link" href="/product_2">Услуга 2</a></li>
                             <li class="menu__item">
 
-                                <a class="link" href="/product_2">Услуга 2</a></li>
+                                <a class="link header-link" href="/product_2">Услуга 2</a></li>
+                            <li class="menu__item">
+
+                                <a class="link header-link" href="/product_2">Услуга 2</a></li>
 
                         </ul>
                     </li>
                     <li class="menu__item">
-                        <a class="link" href="/careers">Вакансии</a>
+                        <a class="link header-link" href="/careers">Вакансии</a>
                     </li>
                     <li class="menu__item">
-                        <a class="link" href="/news">Новости</a>
+                        <a class="link header-link" href="/news">Новости</a>
                     </li>
                     <li class="menu__item menu__item_drop-inside">
-                        <a class="link" href="/documentation">Соглашения</a>
+                        <a class="link header-link" href="/documentation">Соглашения <img src="icons/expand_more.svg"
+                                alt=""></a>
                         <ul class="menu menu_column menu_drop-docs menu_drop">
                             <li class="menu__item">
                                 <a class="link" href="/doc_1">Документ 1Документ 1Документ 1</a></li>
                             <li class="menu__item">
-                                <a class="link" href="/doc_2">Документ 2</a></li>
+                                <a class="link header-link" href="/doc_2">Документ 2</a></li>
                         </ul>
                     </li>
 
@@ -140,7 +133,7 @@
                     </div>
                 </div>
                 <button class="button-2 submit-button">подобрать номер<img class="arrow-forward"
-                        src="arrow_forward_white.svg" alt=""></button>
+                        src="icons/arrow_forward_white.svg" alt=""></button>
             </form>
         </div>
         <p class="note">Лучшие номера для вашей работы, <br> отдыха и просто вдохновения</p>
@@ -151,7 +144,7 @@
         <div class="footer">
             <section class="section-1">
                 <object data="svg" type="svg"></object>
-                <img src="logo.svg" alt="logo">
+                <img src="icons/logo.svg" alt="logo">
                 <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
             </section>
 
@@ -189,7 +182,7 @@
                 <div class="subscribe">
                     <label for="subscribe"></label>
                     <input type="email" name="email" id="subscribe" placeholder="Email">
-                    <button class="email-arrow" type="submit"><img src="arrow_forward_purple.svg" alt=""></button>
+                    <button class="email-arrow" type="submit"><img src="icons/arrow_forward_purple.svg" alt=""></button>
                 </div>
             </section>
         </div>
@@ -198,16 +191,16 @@
                 Copyright © 2018 Toxin отель. Все права зачищены.
             </p>
             <div class="social-links">
-                <a href="http://twitter.com"><img src="twitter-icon.svg" alt=""></a>
-                <a href="http://facebook.com"><img src="facebook-icon.svg" alt=""></a>
-                <a href="http://instagram.com"><img src="instagram-icon.svg" alt=""></a>
+                <a href="http://twitter.com"><img src="icons/twitter-icon.svg" alt=""></a>
+                <a href="http://facebook.com"><img src="icons/facebook-icon.svg" alt=""></a>
+                <a href="http://instagram.com"><img src="icons/instagram-icon.svg" alt=""></a>
             </div>
 
         </div>
 
     </footer>
 
-    <script src="item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
+    <script src="forms/item-quantity-dropdown-master\lib\item-quantity-dropdown.min.js"></script>
     <script>
         $(document).ready(() => {
             $('.iqdropdown').iqDropdown({
